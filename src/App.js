@@ -1,7 +1,28 @@
-export default function App() {
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import Nav from './components/navbar';
+import Omen from './pages/Omen';
+import Cypher from './pages/Cypher';
+import Iso from './pages/Iso';
+import Sova from './pages/Sova';
+
+function App() {
   return (
-    <h1 className="text-6xl font-bold underline italic text-pink-500">
-      Hello world!
-    </h1>
-  )
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Nav />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Navigate to="/omen" />} />
+            <Route path="/omen" element={<Omen />} />
+            <Route path="/cypher" element={<Cypher />} />
+            <Route path="/iso" element={<Iso />} />
+            <Route path="/sova" element={<Sova />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
+  );
 }
+
+export default App;
