@@ -86,10 +86,9 @@ const Cypher = () => {
           <h2 className="text-2xl mb-1">Agent No. 05</h2>
           <h1 className="text-9xl font-medium uppercase -ml-1">Cypher</h1>
           <p className="text-base mb-6">
-            Véritable fantôme d'un souvenir, Omen chasse dans les ténèbres. Il
-            aveugle les ennemis, se téléporte d'un bout à l'autre du champ de
-            bataille et laisse la peur se répandre parmi ses adversaires qui se
-            demandent qui sera sa prochaine victime.
+            Informateur originaire du Maroc, Cypher est un véritable réseau de
+            surveillance à lui tout seul. Il révèle tous les secrets. Il détecte
+            toutes les manœuvres. Rien n'échappe à Cypher.
           </p>
           <div className="flex">
             {abilities.map((ability, index) => (
