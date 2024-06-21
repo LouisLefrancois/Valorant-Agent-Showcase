@@ -86,10 +86,10 @@ const Iso = () => {
           <h2 className="text-2xl mb-1">Agent No. 24</h2>
           <h1 className="text-9xl font-medium uppercase -ml-1">Iso</h1>
           <p className="text-base mb-6">
-            Véritable fantôme d'un souvenir, Omen chasse dans les ténèbres. Il
-            aveugle les ennemis, se téléporte d'un bout à l'autre du champ de
-            bataille et laisse la peur se répandre parmi ses adversaires qui se
-            demandent qui sera sa prochaine victime.
+            Venu de Chine et spécialiste de missions délicates, Iso se fond dans
+            le flux de Radianite pour démanteler les réseaux ennemis. Capable de
+            restructurer l'énergie ambiante en protection anti-balles, il ne
+            dévie pas de la route vers son prochain duel à mort.
           </p>
           <div className="flex">
             {abilities.map((ability, index) => (
