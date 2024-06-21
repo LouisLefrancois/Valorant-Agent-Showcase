@@ -18,6 +18,12 @@ import thumbVid from "../assets/images/thumbVid.png";
 const Omen = () => {
   const [playingAbilityIndex, setPlayingAbilityIndex] = useState(null);
   const [initialVideoPlayed, setInitialVideoPlayed] = useState(false);
+  const [videoTitle, setVideoTitle] = useState(
+    "JUGEMENT // Cinématique de l'Épisode 8 – VALORANT"
+  );
+  const [videoDescription, setVideoDescription] = useState(
+    "La cinématique Jugement de l'épisode 8 de Valorant met en scène une confrontation intense entre Omen, Iso, Cypher, et Sova contre le chef d'une organisation qui semble être un syndicat d'assassins. Ce groupe pourrait être lié au passé d'Iso avant qu'il ne rejoigne le protocole VALORANT.."
+  );
 
   const abilities = [
     { img: imgAbility1, video: vidAbility1 },
@@ -28,7 +34,39 @@ const Omen = () => {
 
   const handleAbilityClick = (index) => {
     setPlayingAbilityIndex(index);
-    setInitialVideoPlayed(true); // Indique que la vidéo principale a été jouée au moins une fois
+    setInitialVideoPlayed(true);
+
+    switch (index) {
+      case 0:
+        setVideoTitle("VOIE DES OMBRES");
+        setVideoDescription(
+          "ÉQUIPEZ-vous d'une compétence de marche des ombres accompagnée d'un indicateur de portée. TIREZ pour commencer une courte canalisation avant de vous téléporter vers l'endroit marqué."
+        );
+        break;
+      case 1:
+        setVideoTitle("PARANOÏA");
+        setVideoDescription(
+          "Tirez INSTANTANÉMENT un projectile d'ombre vers l'avant, ce qui réduit brièvement la portée de la vision de tous les joueurs touchés. Ce projectile peut traverser les murs."
+        );
+        break;
+      case 2:
+        setVideoTitle("VOILE SOMBRE");
+        setVideoDescription(
+          "ÉQUIPEZ-vous d'un orbe d'ombre et entrez dans un monde déphasé afin d'y lancer des orbes. APPUYEZ sur la touche de la compétence pour lancer l'orbe à l'endroit marqué, ce qui crée une sphère d'ombre durable qui bloque la vision."
+        );
+        break;
+      case 3:
+        setVideoTitle("DEPUIS LES OMBRES");
+        setVideoDescription(
+          "ÉQUIPEZ-vous d'une carte tactique. TIREZ pour commencer à vous téléporter vers l'endroit sélectionné. Pendant la téléportation, vous apparaissez sous forme d'ombre. Les ennemis peuvent détruire cette ombre pour annuler votre téléportation."
+        );
+        break;
+      default:
+        setVideoTitle("JUGEMENT // Cinématique de l'Épisode 8 – VALORANT");
+        setVideoDescription(
+          "La cinématique Jugement de l'épisode 8 de Valorant met en scène une confrontation intense entre Omen, Iso, Cypher, et Sova contre le chef d'une organisation qui semble être un syndicat d'assassins. Ce groupe pourrait être lié au passé d'Iso avant qu'il ne rejoigne le protocole VALORANT.."
+        );
+    }
   };
 
   const handleVideoEnded = () => {
@@ -72,16 +110,8 @@ const Omen = () => {
         className="absolute bottom-0 right-0 pr-32 pb-24 text-white descriptionContainer"
         style={{ width: "700px" }}
       >
-        <h1 className="text-3xl mb-3">
-          JUGEMENT // Cinématique de l'Épisode 8 – VALORANT
-        </h1>
-        <p className="text-base mb-6">
-          La cinématique "Jugement" de l'épisode 8 de Valorant met en scène une
-          confrontation intense entre Omen, Iso, Cypher, et Sova contre le chef
-          d'une organisation qui semble être un syndicat d'assassins. Ce groupe
-          pourrait être lié au passé d'Iso avant qu'il ne rejoigne le protocole
-          VALORANT..
-        </p>
+        <h1 className="text-3xl mb-3">{videoTitle}</h1>
+        <p className="text-base mb-6">{videoDescription}</p>
         <div
           className="video-container"
           style={{
@@ -98,7 +128,6 @@ const Omen = () => {
               poster={thumbVid}
             >
               <source src={videoSource} type="video/mp4" />
-              Your browser does not support the video tag.
             </video>
           )}
           {playingAbilityIndex !== null && (
@@ -108,8 +137,7 @@ const Omen = () => {
               loop
               src={abilities[playingAbilityIndex].video}
               onEnded={handleVideoEnded}
-            >
-            </video>
+            ></video>
           )}
         </div>
       </div>
