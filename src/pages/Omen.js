@@ -96,8 +96,8 @@ const Omen = () => {
               <img
                 key={index}
                 src={ability.img}
-                className={`w-10 h-10 mr-7 opacity-70 hover:opacity-100 cursor-pointer ${
-                  playingAbilityIndex === index ? "opacity-100" : ""
+                className={`w-10 h-10 mr-7 hover:opacity-100 cursor-pointer ${
+                  playingAbilityIndex === index ? "opacity-100" : "opacity-60"
                 }`}
                 onClick={() => handleAbilityClick(index)}
               />
