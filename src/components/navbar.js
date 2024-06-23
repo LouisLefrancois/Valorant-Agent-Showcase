@@ -8,18 +8,18 @@ const Navbar = () => {
     <nav className="absolute w-full flex justify-between px-32 py-14 z-10">
       <div className="flex items-center space-x-6">
         <a
-          href="https://www.riotgames.com/fr"
+          href="/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={logoRiotGames} alt="Logo Riot Games" className="h-7" />
+          <img src={logoRiotGames} alt="Logo Riot Games" className="h-6" />
         </a>
         <a
-          href="https://playvalorant.com/fr-fr/"
+          href="/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={logoValorant} alt="Logo Valorant" className="h-7" />
+          <img src={logoValorant} alt="Logo Valorant" className="h-6" />
         </a>
       </div>
       <div className="flex items-center space-x-8 font-montserrat">
