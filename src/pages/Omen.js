@@ -100,7 +100,7 @@ const Omen = () => {
         </div>
       </div>
 
-      <div className=" bottom-0 right-0 pr-32 pb-24 text-white descriptionContainer">
+      <div className="text-white descriptionContainer">
         <h1 className="text-3xl mb-3 videoTitle">{videoTitle}</h1>
         <p className="text-base mb-6 videoDescription">{videoDescription}</p>
         <div className="video-container">
