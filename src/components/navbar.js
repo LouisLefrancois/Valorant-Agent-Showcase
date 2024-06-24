@@ -5,7 +5,7 @@ import logoValorant from "../assets/images/logo-valorant.png";
 
 const Navbar = () => {
   return (
-    <nav className="absolute w-full flex justify-between px-32 py-14 z-10">
+    <nav className="relative w-full flex justify-between px-32 py-14 z-10 bg-transparent navbar">
       <div className="flex items-center space-x-6">
         <a
           href="/"
