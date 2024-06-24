@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import backgroundImage from "../assets/images/1920x1080-background-omen.png";
 
@@ -17,15 +17,7 @@ import thumbVid from "../assets/images/thumbVid.png";
 
 const Omen = () => {
 
-  useEffect(() => {
-    // document.body.classList.add('h-screen', 'bg-cover', 'bg-center');
-    document.body.style.backgroundImage = `url(${backgroundImage})`;
-  
-    return () => {
-      // document.body.classList.remove('h-screen', 'bg-cover', 'bg-center');
-      document.body.style.backgroundImage = "";
-    };
-  }, []);
+  document.body.style.backgroundImage = `url(${backgroundImage})`;
 
   const [playingAbilityIndex, setPlayingAbilityIndex] = useState(null);
   const [initialVideoPlayed, setInitialVideoPlayed] = useState(false);
