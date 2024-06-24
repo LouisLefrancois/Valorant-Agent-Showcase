@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 import backgroundImage from "../assets/images/1920x1080-background-omen.png";
 
@@ -16,7 +16,6 @@ import videoSource from "../assets/videos/valorant-jugement.mp4";
 import thumbVid from "../assets/images/thumbVid.png";
 
 const Omen = () => {
-
   document.body.style.backgroundImage = `url(${backgroundImage})`;
 
   const [playingAbilityIndex, setPlayingAbilityIndex] = useState(null);
@@ -78,7 +77,7 @@ const Omen = () => {
 
   return (
     <div className="flexbox">
-      <div className=" items-end left-0 bottom-0 pl-32 pb-24 text-white textContainer">
+      <div className="items-end text-white textContainer">
         <h2 className="text-2xl mb-1 title txtUpper">Agent No. 03</h2>
         <h1 className="text-9xl font-medium uppercase -ml-1 txtTitle">Omen</h1>
         <p className="text-base mb-6 txtDescription">
