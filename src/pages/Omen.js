@@ -16,6 +16,7 @@ import videoSource from "../assets/videos/valorant-jugement.mp4";
 import thumbVid from "../assets/images/thumbVid.png";
 
 const Omen = () => {
+  document.title = 'Agent Showcase - Omen';
   document.body.style.backgroundImage = `url(${backgroundImage})`;
 
   const [playingAbilityIndex, setPlayingAbilityIndex] = useState(null);

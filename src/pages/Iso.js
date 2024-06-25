@@ -16,6 +16,7 @@ import videoSource from "../assets/videos/valorant-jugement.mp4";
 import thumbVid from "../assets/images/thumbVid.png";
 
 const Iso = () => {
+  document.title = 'Agent Showcase - Iso';
   document.body.style.backgroundImage = `url(${backgroundImage})`;
 
   const [playingAbilityIndex, setPlayingAbilityIndex] = useState(null);
