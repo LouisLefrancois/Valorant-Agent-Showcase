@@ -7,20 +7,22 @@ const Navbar = () => {
   return (
     <nav className="relative w-full flex justify-between z-10 bg-transparent navbar">
       <div className="flex items-center space-x-6">
-        <a
-          href="/"
+        <NavLink
+          to="/"
+          className="block"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={logoRiotGames} alt="Logo Riot Games" className="h-6" />
-        </a>
-        <a
-          href="/"
+        </NavLink>
+        <NavLink
+          to="/"
+          className="block"
           target="_blank"
           rel="noopener noreferrer"
         >
           <img src={logoValorant} alt="Logo Valorant" className="h-6" />
-        </a>
+        </NavLink>
       </div>
       <div className="flex items-center space-x-8 font-montserrat">
         <NavLink
