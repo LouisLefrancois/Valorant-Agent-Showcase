@@ -9,14 +9,12 @@ const Navbar = () => {
       <div className="flex items-center space-x-6">
         <a
           href="/"
-          target="_blank"
           rel="noopener noreferrer"
         >
           <img src={logoRiotGames} alt="Logo Riot Games" className="h-6" />
         </a>
         <a
           href="/"
-          target="_blank"
           rel="noopener noreferrer"
         >
           <img src={logoValorant} alt="Logo Valorant" className="h-6" />
