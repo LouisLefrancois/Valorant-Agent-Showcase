@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Nav from './components/navbar';
 import Omen from './pages/Omen';
 import Cypher from './pages/Cypher';
@@ -8,7 +8,7 @@ import Sova from './pages/Sova';
 
 function App() {
   return (
-    <Router basename="/Valorant-Agent-Showcase">
+    <Router>
       <div className="flex flex-col min-h-screen">
         <Nav />
         <main className="flex-grow">
