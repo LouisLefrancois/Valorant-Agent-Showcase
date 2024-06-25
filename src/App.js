@@ -8,7 +8,7 @@ import Sova from './pages/Sova';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Valorant-Agent-Showcase">
       <div className="flex flex-col min-h-screen">
         <Nav />
         <main className="flex-grow">
