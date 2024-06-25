@@ -113,6 +113,7 @@ const Iso = () => {
           {playingAbilityIndex !== null && (
             <video
               autoPlay
+              playsInline
               loop
               src={abilities[playingAbilityIndex].video}
               onEnded={handleVideoEnded}
