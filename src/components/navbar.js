@@ -1,69 +1,28 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import logoRiotGames from "../assets/images/logo-riotgames.png";
-import logoValorant from "../assets/images/logo-valorant.png";
+import React from 'react';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import Nav from './components/navbar';
+import Omen from './pages/Omen';
+import Cypher from './pages/Cypher';
+import Iso from './pages/Iso';
+import Sova from './pages/Sova';
 
-const Navbar = () => {
+function App() {
   return (
-    <nav className="relative w-full flex justify-between z-10 bg-transparent navbar">
-      <div className="flex items-center space-x-6">
-        <a
-          href="/"
-          rel="noopener noreferrer"
-        >
-          <img src={logoRiotGames} alt="Logo Riot Games" className="h-6" />
-        </a>
-        <a
-          href="/"
-          rel="noopener noreferrer"
-        >
-          <img src={logoValorant} alt="Logo Valorant" className="h-6" />
-        </a>
+    <Router>
+      <div className="flex flex-col min-h-screen">
+        <Nav />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Navigate to="/omen" />} />
+            <Route path="/omen" element={<Omen />} />
+            <Route path="/cypher" element={<Cypher />} />
+            <Route path="/iso" element={<Iso />} />
+            <Route path="/sova" element={<Sova />} />
+          </Routes>
+        </main>
       </div>
-      <div className="flex items-center space-x-8 font-montserrat">
-        <NavLink
-          to="/omen"
-          className={({ isActive }) =>
-            isActive
-              ? "text-white uppercase text-xs font-bold tracking-wider"
-              : "text-gray-400 hover:text-gray-200 uppercase text-xs font-bold tracking-wider"
-          }
-        >
-          Omen
-        </NavLink>
-        <NavLink
-          to="/cypher"
-          className={({ isActive }) =>
-            isActive
-              ? "text-white uppercase text-xs font-bold tracking-wider"
-              : "text-gray-400 hover:text-gray-200 uppercase text-xs font-bold tracking-wider"
-          }
-        >
-          Cypher
-        </NavLink>
-        <NavLink
-          to="/iso"
-          className={({ isActive }) =>
-            isActive
-              ? "text-white uppercase text-xs font-bold tracking-wider"
-              : "text-gray-400 hover:text-gray-200 uppercase text-xs font-bold tracking-wider"
-          }
-        >
-          Iso
-        </NavLink>
-        <NavLink
-          to="/sova"
-          className={({ isActive }) =>
-            isActive
-              ? "text-white uppercase text-xs font-bold tracking-wider"
-              : "text-gray-400 hover:text-gray-200 uppercase text-xs font-bold tracking-wider"
-          }
-        >
-          Sova
-        </NavLink>
-      </div>
-    </nav>
+    </Router>
   );
-};
+}
 
-export default Navbar;
+export default App;
