@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Valorant-Agent-Showcase/static/css/main.b90a15ff.css",
+    "main.js": "/Valorant-Agent-Showcase/static/js/main.0013a4ff.js",
+    "static/js/453.803a2f1b.chunk.js": "/Valorant-Agent-Showcase/static/js/453.803a2f1b.chunk.js",
+    "static/media/valorant-jugement.mp4": "/Valorant-Agent-Showcase/static/media/valorant-jugement.856960a0e672013e7511.mp4",
+    "static/media/spell-1.mp4": "/Valorant-Agent-Showcase/static/media/spell-1.c20720e4364dfa454541.mp4",
+    "static/media/spell-4.mp4": "/Valorant-Agent-Showcase/static/media/spell-4.0dd1ec926a400d0a505d.mp4",
+    "static/media/spell-3.mp4": "/Valorant-Agent-Showcase/static/media/spell-3.b2381936c267e6e3c5e0.mp4",
+    "static/media/spell-2.mp4": "/Valorant-Agent-Showcase/static/media/spell-2.5ee1a6bdf86b8c35f81e.mp4",
+    "static/media/1920x1080-background-omen.png": "/Valorant-Agent-Showcase/static/media/1920x1080-background-omen.9371ea56fbbafb01512e.png",
+    "static/media/1920x1080-background-iso.png": "/Valorant-Agent-Showcase/static/media/1920x1080-background-iso.ece4eed6069290786a3e.png",
+    "static/media/1920x1080-background-cypher.png": "/Valorant-Agent-Showcase/static/media/1920x1080-background-cypher.3076364abd895e8eee9d.png",
+    "static/media/1920x1080-background-sova.png": "/Valorant-Agent-Showcase/static/media/1920x1080-background-sova.c76f311211d04c1e9b30.png",
+    "static/media/thumbVid.png": "/Valorant-Agent-Showcase/static/media/thumbVid.6e2a17b7151fa6db08b7.png",
+    "index.html": "/Valorant-Agent-Showcase/index.html",
+    "main.b90a15ff.css.map": "/Valorant-Agent-Showcase/static/css/main.b90a15ff.css.map",
+    "main.0013a4ff.js.map": "/Valorant-Agent-Showcase/static/js/main.0013a4ff.js.map",
+    "453.803a2f1b.chunk.js.map": "/Valorant-Agent-Showcase/static/js/453.803a2f1b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b90a15ff.css",
+    "static/js/main.0013a4ff.js"
+  ]
+}
