@@ -86,10 +86,10 @@ const Iso = () => {
           <h2 className="text-2xl mb-1 txtUpper">Agent No. 24</h2>
           <h1 className="text-9xl font-medium uppercase -ml-1 txtTitle">Iso</h1>
           <p className="text-base mb-6 txtDescription">
-            Venu de Chine et spécialiste de missions délicates, Iso se fond dans
-            le flux de Radianite pour démanteler les réseaux ennemis. Capable de
-            restructurer l'énergie ambiante en protection anti-balles, il ne
-            dévie pas de la route vers son prochain duel à mort.
+            Originaire de Chine et expert en missions délicates, Iso manipule la
+            Radianite pour infiltrer et démanteler les réseaux ennemis. Il peut
+            reconfigurer l'énergie ambiante en boucliers anti-balles, toujours
+            prêt pour un affrontement mortel.
           </p>
           <div className="flex">
             {abilities.map((ability, index) => (
