@@ -16,8 +16,7 @@ import videoSource from "../assets/videos/valorant-jugement.mp4";
 import thumbVid from "../assets/images/thumbVid.png";
 
 const Omen = () => {
-  document.title = 'Agent Showcase - Omen';
-  document.body.style.backgroundImage = `url(${backgroundImage})`;
+  document.title = "Agent Showcase - Omen";
 
   const [playingAbilityIndex, setPlayingAbilityIndex] = useState(null);
   const [initialVideoPlayed, setInitialVideoPlayed] = useState(false);
@@ -77,48 +76,56 @@ const Omen = () => {
   };
 
   return (
-    <div className="flexbox">
-      <div className="items-end text-white textContainer">
-        <h2 className="text-2xl mb-1 title txtUpper">Agent No. 03</h2>
-        <h1 className="text-9xl font-medium uppercase -ml-1 txtTitle">Omen</h1>
-        <p className="text-base mb-6 txtDescription">
-          Véritable fantôme d'un souvenir, Omen chasse dans les ténèbres. Il
-          aveugle les ennemis, se téléporte d'un bout à l'autre du champ de
-          bataille et laisse la peur se répandre parmi ses adversaires qui se
-          demandent qui sera sa prochaine victime.
-        </p>
-        <div className="flex">
-          {abilities.map((ability, index) => (
-            <img
-              key={index}
-              src={ability.img}
-              className={`w-10 h-10 mr-7 hover:opacity-100 cursor-pointer abilityIcons ${
-                playingAbilityIndex === index ? "opacity-100" : "opacity-60"
-              }`}
-              onClick={() => handleAbilityClick(index)}
-            />
-          ))}
+    <div>
+      <div
+        className="background"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      ></div>
+      <div className="flexbox">
+        <div className="items-end text-white textContainer">
+          <h2 className="text-2xl mb-1 title txtUpper">Agent No. 03</h2>
+          <h1 className="text-9xl font-medium uppercase -ml-1 txtTitle">
+            Omen
+          </h1>
+          <p className="text-base mb-6 txtDescription">
+            Véritable fantôme d'un souvenir, Omen chasse dans les ténèbres. Il
+            aveugle les ennemis, se téléporte d'un bout à l'autre du champ de
+            bataille et laisse la peur se répandre parmi ses adversaires qui se
+            demandent qui sera sa prochaine victime.
+          </p>
+          <div className="flex">
+            {abilities.map((ability, index) => (
+              <img
+                key={index}
+                src={ability.img}
+                className={`w-10 h-10 mr-7 hover:opacity-100 cursor-pointer abilityIcons ${
+                  playingAbilityIndex === index ? "opacity-100" : "opacity-60"
+                }`}
+                onClick={() => handleAbilityClick(index)}
+              />
+            ))}
+          </div>
         </div>
-      </div>
 
-      <div className="text-white descriptionContainer">
-        <h1 className="text-3xl mb-3 videoTitle">{videoTitle}</h1>
-        <p className="text-base mb-6 videoDescription">{videoDescription}</p>
-        <div className="video-container">
-          {!playingAbilityIndex && !initialVideoPlayed && (
-            <video controls poster={thumbVid}>
-              <source src={videoSource} type="video/mp4" />
-            </video>
-          )}
-          {playingAbilityIndex !== null && (
-            <video
-              autoPlay
-              playsInline
-              loop
-              src={abilities[playingAbilityIndex].video}
-              onEnded={handleVideoEnded}
-            ></video>
-          )}
+        <div className="text-white descriptionContainer">
+          <h1 className="text-3xl mb-3 videoTitle">{videoTitle}</h1>
+          <p className="text-base mb-6 videoDescription">{videoDescription}</p>
+          <div className="video-container">
+            {!playingAbilityIndex && !initialVideoPlayed && (
+              <video controls poster={thumbVid}>
+                <source src={videoSource} type="video/mp4" />
+              </video>
+            )}
+            {playingAbilityIndex !== null && (
+              <video
+                autoPlay
+                playsInline
+                loop
+                src={abilities[playingAbilityIndex].video}
+                onEnded={handleVideoEnded}
+              ></video>
+            )}
+          </div>
         </div>
       </div>
     </div>
