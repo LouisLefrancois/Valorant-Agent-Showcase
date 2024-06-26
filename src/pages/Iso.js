@@ -16,8 +16,7 @@ import videoSource from "../assets/videos/valorant-jugement.mp4";
 import thumbVid from "../assets/images/thumbVid.png";
 
 const Iso = () => {
-  document.title = 'Agent Showcase - Iso';
-  document.body.style.backgroundImage = `url(${backgroundImage})`;
+  document.title = "Agent Showcase - Iso";
 
   const [playingAbilityIndex, setPlayingAbilityIndex] = useState(null);
   const [initialVideoPlayed, setInitialVideoPlayed] = useState(false);
@@ -77,8 +76,13 @@ const Iso = () => {
   };
 
   return (
-    <div className="flexbox">
-      <div className="items-end text-white textContainer">
+    <div>
+      <div
+        className="background"
+        style={{ backgroundImage: `url(${backgroundImage})` }}
+      ></div>
+      <div className="flexbox">
+        <div className="items-end text-white textContainer">
           <h2 className="text-2xl mb-1 txtUpper">Agent No. 24</h2>
           <h1 className="text-9xl font-medium uppercase -ml-1 txtTitle">Iso</h1>
           <p className="text-base mb-6 txtDescription">
@@ -99,26 +103,27 @@ const Iso = () => {
               />
             ))}
           </div>
-      </div>
+        </div>
 
-      <div className="text-white descriptionContainer">
-        <h1 className="text-3xl mb-3 videoTitle">{videoTitle}</h1>
-        <p className="text-base mb-6 videoDescription">{videoDescription}</p>
-        <div className="video-container">
-          {!playingAbilityIndex && !initialVideoPlayed && (
-            <video controls poster={thumbVid}>
-              <source src={videoSource} type="video/mp4" />
-            </video>
-          )}
-          {playingAbilityIndex !== null && (
-            <video
-              autoPlay
-              playsInline
-              loop
-              src={abilities[playingAbilityIndex].video}
-              onEnded={handleVideoEnded}
-            ></video>
-          )}
+        <div className="text-white descriptionContainer">
+          <h1 className="text-3xl mb-3 videoTitle">{videoTitle}</h1>
+          <p className="text-base mb-6 videoDescription">{videoDescription}</p>
+          <div className="video-container">
+            {!playingAbilityIndex && !initialVideoPlayed && (
+              <video controls poster={thumbVid}>
+                <source src={videoSource} type="video/mp4" />
+              </video>
+            )}
+            {playingAbilityIndex !== null && (
+              <video
+                autoPlay
+                playsInline
+                loop
+                src={abilities[playingAbilityIndex].video}
+                onEnded={handleVideoEnded}
+              ></video>
+            )}
+          </div>
         </div>
       </div>
     </div>
