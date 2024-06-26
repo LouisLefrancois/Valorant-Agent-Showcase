@@ -90,9 +90,8 @@ const Sova = () => {
           <p className="text-base mb-6 txtDescription">
             Né dans l'hiver éternel de la toundra russe, Sova traque, trouve et
             élimine ses ennemis avec une efficacité et une précision
-            redoutables. Ses incroyables talents d'éclaireur et son arc
-            personnalisé lui garantissent que sa cible ne fuira jamais très
-            longtemps.
+            redoutables. Grâce à ses talents d'éclaireur et à son arc
+            personnalisé, sa cible ne peut jamais fuir bien longtemps.
           </p>
           <div className="flex">
             {abilities.map((ability, index) => (
