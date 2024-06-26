@@ -6,133 +6,132 @@
 @import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
 
 body {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .flexbox {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 90%;
-    margin: 0 auto;
-    padding: 0;
-    height: 75vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  height: 75vh;
 }
 
 .navbar {
-    width: 90%;
-    padding: 50px 0;
-    margin: 0 auto;
+  width: 90%;
+  padding: 50px 0;
+  margin: 0 auto;
 }
 
-h1, h2 {
-    font-family: 'Bebas Neue', sans-serif;
+h1,
+h2 {
+  font-family: "Bebas Neue", sans-serif;
 }
 
 p {
-    font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .textContainer,
 .descriptionContainer {
-    width: 700px;
-    padding: 0;
+  width: 700px;
+  padding: 0;
 }
 
 .textContainer {
-    margin-right: 15px;
+  margin-right: 15px;
 }
 
 @media (max-width: 1024px) {
-    
-    .background {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: center;
-        filter: brightness(0.5);
-      }
-      
-
-    .flexbox {
-        display: block;
-        padding: 0;
-        margin: 0 auto 15px;
-        height: auto;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 auto;
-        padding: 35px 0;
-        gap: 25px;
-    }
-
-    .navbar img {
-        max-width: none;
-    }
-
-    .textContainer,
-    .descriptionContainer {
-        position: relative;
-        display: flex;
-        text-align: left;
-        margin: 0 auto;
-        width: 100%;
-        max-width: 100vw;
-        padding: 0;
-    }
-    
-    .textContainer {
-        flex-direction: column;
-        align-items: start;
-        margin-bottom: 15px;
-    }
-
-    .descriptionContainer {
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .txtUpper {
-        font-size: 20px;
-        margin: 0;
-    }
-
-    .txtTitle {
-        font-size: 90px;
-    }
-
-    .txtDescription {
-        font-size: 14px;
-        margin-bottom: 10px;
-    }
-
-    .abilityIcons {
-        height: 35px;
-        width: 35px;
-    }
-    
-    .videoTitle {
-        font-size: 24px;
-        margin: 0;
-    }
-
-    .videoDescription {
-        font-size: 14px;
-        margin-bottom: 15px;
-    }
-
-    .video-container video {
-        width: 100vw;
-        height: auto;
-    }
+  .background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5);
   }
+
+  .flexbox {
+    display: block;
+    padding: 0;
+    margin: 0 auto 15px;
+    height: auto;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 35px 0;
+    gap: 25px;
+  }
+
+  .navbar img {
+    max-width: none;
+  }
+
+  .textContainer,
+  .descriptionContainer {
+    position: relative;
+    display: flex;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100vw;
+    padding: 0;
+  }
+
+  .textContainer {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 15px;
+  }
+
+  .descriptionContainer {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .txtUpper {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .txtTitle {
+    font-size: 90px;
+  }
+
+  .txtDescription {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .abilityIcons {
+    height: 35px;
+    width: 35px;
+  }
+
+  .videoTitle {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .videoDescription {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .video-container video {
+    width: 100vw;
+    height: auto;
+  }
+}
