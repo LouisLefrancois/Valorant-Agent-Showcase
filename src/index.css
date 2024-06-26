@@ -56,7 +56,7 @@ p {
     .flex-grow {
         height: 100vh;
         display: flex;
-        align-items: flex-end;
+        align-items: flex-start;
     }
 
     .flexbox {
