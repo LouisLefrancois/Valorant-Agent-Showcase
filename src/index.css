@@ -70,8 +70,9 @@ p {
 
   .flexbox {
     display: block;
+    width: 95%;
     padding: 0;
-    margin: 0 auto 15px;
+    margin: 0 auto 5px;
     height: auto;
   }
 
@@ -80,7 +81,7 @@ p {
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    padding: 35px 0;
+    padding: 30px 0;
     gap: 25px;
   }
 
@@ -102,7 +103,7 @@ p {
   .textContainer {
     flex-direction: column;
     align-items: start;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
 
   .descriptionContainer {
@@ -111,12 +112,12 @@ p {
   }
 
   .txtUpper {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0;
   }
 
   .txtTitle {
-    font-size: 90px;
+    font-size: 70px;
   }
 
   .txtDescription {
