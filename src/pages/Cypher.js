@@ -88,9 +88,10 @@ const Cypher = () => {
             Cypher
           </h1>
           <p className="text-base mb-6 txtDescription">
-            Informateur originaire du Maroc, Cypher est un véritable réseau de
-            surveillance à lui tout seul. Il révèle tous les secrets. Il détecte
-            toutes les manœuvres. Rien n'échappe à Cypher.
+            Cypher, un être humanoïde du Maroc, est un réseau de surveillance
+            redoutable. Aucune manœuvre ennemie n'échappe à ses capacités. Il
+            localise et révèle les positions ennemies avec précision, utilisant
+            des caméras espion.
           </p>
           <div className="flex">
             {abilities.map((ability, index) => (
